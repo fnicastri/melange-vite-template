@@ -1,7 +1,9 @@
-# melange-opam-template
+# melange-vite-template
 
 A simple project template using [Melange](https://github.com/melange-re/melange)
-with [opam](https://opam.ocaml.org/).
+with [opam](https://opam.ocaml.org/) and [Vite](https://vitejs.dev/).
+
+If you are looking for a template with webpack, check [melange-opam-template](https://github.com/melange-re/melange-opam-template).
 
 If you are looking for a template with esy, check [melange-esy-template](https://github.com/melange-re/melange-esy-template).
 
@@ -9,10 +11,7 @@ If you are looking for a template with esy, check [melange-esy-template](https:/
 
 ```shell
 make init
-
-# In separate terminals:
-make watch
-make serve
+make dev
 ```
 
 ### React
@@ -29,9 +28,9 @@ are a few of the most useful ones:
 - `make init`: set up opam local switch and download OCaml, Melange and
 JavaScript dependencies
 - `make install`: install OCaml, Melange and JavaScript dependencies
-- `make watch`: watch for the filesystem and have Melange rebuild on every
-change
-- `make serve`: serve the application with a local HTTP server
+- `make dev`: run a development server that watches for changes
+- `make serve`: serve a production build with a local HTTP server
+- `make bundle`: bundle a production build in the `dist/` directory
 
 ## JavaScript output
 
