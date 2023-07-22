@@ -7,6 +7,16 @@ If you are looking for a template with webpack, check [melange-opam-template](ht
 
 If you are looking for a template with esy, check [melange-esy-template](https://github.com/melange-re/melange-esy-template).
 
+## Integration with Vite
+
+For informations about Vite integration and filing issues, see the [vite-plugin-melange repository](https://github.com/pdelacroix/vite-plugin-melange).
+
+## Possible improvements
+
+- Use [vite-node](https://www.npmjs.com/package/vite-node) for the Node part
+- SSR
+- Integration with [vitest](https://vitest.dev/)
+
 ## Quick Start
 
 ```shell
