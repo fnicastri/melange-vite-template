@@ -10,6 +10,6 @@
   },
   "devDependencies": {
     "vite": "^4.4.0",
-    "vite-plugin-melange": "^2.1.1"
+    "vite-plugin-melange": "^2.2.0"
   }
 }
