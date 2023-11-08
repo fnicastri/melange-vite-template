@@ -24,6 +24,17 @@ make init
 make dev
 ```
 
+When running `make init`, you may encounter an error like this:
+
+```
+[ERROR] Could not determine which packages to install for this switch:
+  * Missing dependency:
+    - melange >= 1.0.0
+    no matching version
+```
+
+It means `opam` doesn't have the latest packages definitions from the opam-repository. To address this, first run `opam update`, then rerun `make init`.
+
 ### React
 
 React support is provided by
@@ -31,6 +42,8 @@ React support is provided by
 point of the sample React app is [`src/ReactApp.re`](src/ReactApp.re).
 
 ## Commands
+
+In opam / dune projects, our personal preference is to group commonly used commands in a Makefile. This is completely optional.
 
 You can see all available commands by running `make help` or just `make`. Here
 are a few of the most useful ones:
@@ -44,7 +57,7 @@ JavaScript dependencies
 
 ## JavaScript output
 
-Since Melange just compiles source files into JavaScript files, it can be used
+Since Melange compiles source files into JavaScript files, it can be used
 for projects on any JavaScript platform - not just the browser.
 
 The template includes two `melange.emit` stanza for two separate apps. This
